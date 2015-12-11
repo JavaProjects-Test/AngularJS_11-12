@@ -1,0 +1,18 @@
+<html>
+<head>
+<style type="text/css">
+.red{
+color:red;
+}
+</style>
+</head>
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+<input ng-model="myData.val">
+<h1>{{myData.val}}</h1>
+<h3 ng-class="'red'"><span ng-show="myData.toolong">Name is too long!!</span></h3>
+</div>	
+<script src="angular.min.js"></script>
+<script src="model.js"></script>
+</body>
+</html>

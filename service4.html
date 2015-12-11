@@ -1,0 +1,15 @@
+<html>
+<script src="angular.min.js"></script>
+<script src="service4.js"></script>
+<body ng-app="myApp">
+<div ng-controller="myCtrl1">
+<h2>This is controller 1</h2>
+<input ng-model="myService.message">
+{{myService.message}}
+</div>
+<div ng-controller="myCtrl2">
+<h2>this is Controller 2</h2>
+{{myService.message1}}
+</div>
+</body>
+</html>

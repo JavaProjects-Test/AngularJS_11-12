@@ -1,0 +1,10 @@
+<html>
+<script src="angular.min.js"></script>
+<script src="filter3.js"></script>
+<body ng-app="myApp" ng-controller="myCtrl">
+<input ng-model="myFilter.name">
+<div ng-repeat="value in myData.arr | filter:myFilter">
+{{value}}
+</div>
+</body>
+</html>

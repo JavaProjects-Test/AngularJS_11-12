@@ -1,0 +1,16 @@
+<html>
+<script src="angular.min.js"></script>
+<script src="repeat.js"></script>
+<body ng-app="myApp" ng-controller="myCtrl" >
+
+<div ng-repeat-start="x in number track by $index">
+{{x}}:{{$index}}
+<span ng-show="$first">1st</span>
+<span ng-show="$middle">Middle</span>
+<span ng-show="$last">Last</span>
+<span ng-show="$even">EVEN</span>
+<span ng-show="$odd">ODD</span>
+</div>
+<hr ng-repeat-end>
+</body>
+</html>

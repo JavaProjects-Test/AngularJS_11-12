@@ -1,0 +1,15 @@
+<html>
+<script src="angular.min.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+<body ng-app="myApp">
+
+<div ng-controller="myCtrl">
+{{val}}
+
+<button ng-click="increment()">Click Me</button>
+<h2 ng-show="even">EVEN</h2>
+<h2 ng-hide="odd">ODD</h2>
+
+</div>
+</body>
+</html>

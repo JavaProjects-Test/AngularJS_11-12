@@ -1,0 +1,17 @@
+<html>
+<head>
+<style type="text/css">
+.orange{
+color:orange;
+}
+</style>
+</head>
+<body ng-app="myApp" ng-contrller="myCtrl">
+
+<input ng-model="myFilter.string">
+<h3>{{myFilter.string | uppercase}}<h3>
+<h3>{{myFilter.string | lowercase}}</h3>
+<script src="angular.min.js"></script>
+<script src="filter1.js"></script>
+</body>
+</html>

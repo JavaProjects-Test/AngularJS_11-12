@@ -1,0 +1,18 @@
+<html>
+<head>
+<style type="text/css">
+.orange{
+color:orange;
+}
+</style>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<input ng-model="myFilter.string">
+<div ng-repeat="name in myData.arr | filter:myFilter.string">
+{{name}}
+</div>
+<script src="angular.min.js"></script>
+<script src="filter2.js"></script>
+</body>
+</html>
